@@ -9,12 +9,13 @@
     <title>Mineral Vault</title>
   </head>
   <body>
+    <!-- === === === === Header starts here === === === === -->
     <header class="header">
       <div class="container">
         <div class="header__logo">
           <img src="images/logo-yellow.svg" alt="logo" />
         </div>
-        <div class="header__links">
+        <div class="header__links" id="headerLinks">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -32,15 +33,22 @@
             </ul>
           </nav>
           <a class="button button--secondary" href="contact.html">Contact Us</a>
+          <button class="hamburger hamburger--squeeze" id="hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>
         </div>
-        <div class="hamburger hamburger--squeeze">
+        <button class="hamburger hamburger--squeeze" id="hamburger">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
-        </div>
+        </button>
       </div>
     </header>
+    <!-- === === === === Header ends here === === === === -->
     <main class="main">
+      <!-- === === === === Hero section starts here === === === === -->
       <section class="hero">
         <div class="container">
           <h1 class="h1">
@@ -75,7 +83,200 @@
           </a>
         </div>
       </section>
+      <!-- === === === === Hero section ends here === === === === -->
+
+      <!-- === === === === Info section starts here === === === === -->
+      <section class="info">
+        <div class="container">
+          <div class="info__accordion">
+            <div class="accordion__item accordion__item--active">
+              <div class="accordion__header">
+                <h3 class="h3">What are Mineral Interests?</h3>
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.99999 7.93933L12 13.9393L18 7.93933L19.0607 8.99999L12 16.0607L4.93933 8.99999L5.99999 7.93933Z"
+                    fill="#F4F4F4"
+                  />
+                </svg>
+              </div>
+              <div class="accordion__content">
+                <p class="b2">
+                  Mineral interests, sometimes called mineral rights, are real
+                  estate interests - just like undeveloped land, a residential
+                  home, or a commercial building - but instead of involving the
+                  "surface" land and improvements (which generally only includes
+                  0-100 meters below ground level), mineral rights involve the
+                  real estate deep below the surface of the earth, from ~100
+                  meters below the surface to the core of the Earth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- === === === === Info section ends here === === === === -->
+
+      <!-- === === === === Divider section starts here === === === === -->
+      <section class="divider">
+        <div class="left"></div>
+        <img src="images/decoration-line.svg" alt="decorative line" />
+        <div class="right"></div>
+      </section>
+      <!-- === === === === Divider section ends here === === === === -->
+
+      <!-- === === === === Why section starts here === === === === -->
+      <section class="why">
+        <div class="container">
+          <div class="why__heading">
+            <h2 class="h2">
+              Why invest in a <span>Mineral Vault Token?</span>
+            </h2>
+          </div>
+          <div class="why__content">
+            <div class="why__points"></div>
+            <div class="why__details"></div>
+          </div>
+        </div>
+      </section>
+      <!-- === === === === Why section ends here === === === === -->
+
+      <!-- === === === === CTA section ends here === === === === -->
+      <section class="cta">
+        <div class="container">
+          <div class="cta-wrapper">
+            <div class="cta-div">
+              <div class="cta__image">
+                <img src="images/cta-image.png" alt="coins" />
+              </div>
+              <div class="cta__content">
+                <h2 class="h2">Our Flagship Token</h2>
+                <p class="b2">
+                  Every token you own signifies a stake in our real estate
+                  assets. Simply buy and hold to start earning passive income
+                  from our cash-flow properties
+                </p>
+                <div class="cta__buttons">
+                  <a href="#" class="button button--primary">Buy Now</a>
+                  <a href="#" class="button button--secondary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- === === === === CTA section ends here === === === === -->
+
+      <!-- === === === === Blog section ends here === === === === -->
+      <section class="blog">
+        <div class="container">
+          <div class="blog__heading">
+            <div class="h2">Our Latest Articles</div>
+            <a href="#" class="button button--secondary">View All</a>
+          </div>
+          <div class="blog__cards">
+            <div class="blog-card">
+              <img src="images/card-1.png" alt="" class="blog-card__image" />
+              <p class="blog-card__title b1">
+                Understanding how mineral rights work in Texas
+              </p>
+              <p class="blog-card__description b2">
+                Mineral rights are a complex and important aspect of property
+                ownership in Texas. They refer to the ownership and rights to
+                extract minerals...
+              </p>
+            </div>
+            <div class="blog-card">
+              <img src="images/card-2.png" alt="" class="blog-card__image" />
+              <p class="blog-card__title b1">
+                Ownership of Mineral Rights: How do I know who owns the rights?
+              </p>
+              <p class="blog-card__description b2">
+                If you are a property owner in an area that has precious
+                resources like oil, gas, or minerals, you may consider the
+                immediate revenue that your land can provide...
+              </p>
+            </div>
+            <div class="blog-card">
+              <img src="images/card-3.png" alt="" class="blog-card__image" />
+              <p class="blog-card__title b1">
+                Selling mineral rights is much more different than selling most
+                items.
+              </p>
+              <p class="blog-card__description b2">
+                It goes further than having someone pay for the item and
+                transferring the title of ownership. When you sell your mineral
+                rights, you are transferring all your...
+              </p>
+            </div>
+          </div>
+          <div class="view-more-mobile">
+            <a href="#" class="button button--secondary">View All</a>
+          </div>
+        </div>
+      </section>
+      <!-- === === === === Blog section ends here === === === === -->
     </main>
+    <!-- === === === === Footer starts here === === === === -->
+    <footer class="footer">
+      <div class="container">
+        <div class="left">
+          <img src="images/logo-white.svg" alt="logo" />
+          <a href="#" class="left-item">
+            <img src="images/map.svg" alt="map icon" />
+            <span
+              >2572 Willow Greene Drive <br />
+              Montgomery, AL 36104
+            </span>
+          </a>
+          <a href="#" class="left-item">
+            <img src="images/mail.svg" alt="map icon" />
+            <span>hello@mineralvault.io</span>
+          </a>
+          <a href="#" class="left-item">
+            <img src="images/phone.svg" alt="map icon" />
+            <span>334-275-4203</span>
+          </a>
+        </div>
+        <div class="center">
+          <div class="link-block">
+            <h4 class="h4">Quick Links</h4>
+            <a href="#">Our Team</a>
+            <a href="#">FAQ</a>
+            <a href="#">Blog</a>
+          </div>
+          <div class="link-block">
+            <h4 class="h4">MineVault</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+          <p class="copyright b3">
+            Copyright © 2024 MineralVault. All Rights Reserved.
+          </p>
+        </div>
+        <div class="right">
+          <h4 class="h4">Subscribe to our Newsletter</h4>
+          <form action="" class="form">
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Enter your email"
+            />
+            <button class="button button--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- === === === === Footer ends here === === === === -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   </body>
