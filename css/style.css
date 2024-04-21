@@ -590,7 +590,9 @@ img {
 
 .why__content {
   display: grid;
-  /* grid-template-columns: 400px 1fr; */
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  gap: 65px;
   margin-top: 72px;
 }
 
@@ -599,7 +601,43 @@ img {
   flex-direction: column;
   border-radius: 24px;
   padding: 48px;
+  gap: 32px;
   border: 1px solid #383838;
+}
+
+.why__points .point {
+  display: flex;
+  align-items: center;
+  color: #6a6a6a;
+  transition: all 300ms ease;
+  cursor: pointer;
+  gap: 0px;
+}
+
+.why__points .point .arrow {
+  width: 0;
+  transition: all 300ms ease;
+}
+
+.why__points .point.point--active {
+  color: #f4f4f4;
+  gap: 8px;
+}
+
+.why__points .point.point--active .arrow {
+  width: 40px;
+}
+
+.why__details ul {
+  margin-bottom: 0;
+}
+
+.why__details .h4 {
+  font-weight: 350;
+}
+
+.why__details .h4:not(:last-child) {
+  margin-bottom: 24px;
 }
 /* === === === === Why section styles end here === === === === */
 
@@ -852,6 +890,14 @@ img {
     font-size: 28px;
     line-height: 34px;
   }
+
+  .why__content {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .why__points {
+    padding: 24px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -917,6 +963,16 @@ img {
     display: inline-block;
   }
 
+  .why__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why__points {
+    gap: 12px;
+    padding: 16px;
+  }
+
   .cta-div {
     grid-template-columns: 1fr;
   }
@@ -961,6 +1017,20 @@ img {
   .h2 {
     font-size: 40px;
     line-height: 44px;
+  }
+
+  .why__details .h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .why__details .h4:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .why__points .point .h3 {
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .blog__cards {
