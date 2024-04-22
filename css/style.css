@@ -521,6 +521,76 @@ img {
 }
 /* === === === === Hero styles end here === === === === */
 
+/* === === === === Info styles start here === === === === */
+.info {
+  padding: 136px 0;
+}
+
+.info .container {
+  display: grid;
+  grid-template-columns: 48% 1fr;
+  gap: 32px;
+}
+
+.info__wrapper {
+  max-height: 450px;
+  overflow: auto;
+  direction: rtl;
+  padding-left: 28px;
+  scrollbar-color: #9c9c9c #393939;
+  scrollbar-width: thin;
+}
+
+.info__accordion {
+  direction: ltr;
+}
+
+.info--image {
+  max-height: 450px;
+}
+
+.info--image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.accordion__item {
+  margin-bottom: 40px;
+}
+
+.accordion__header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  color: #9c9c9c;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+}
+
+.accordion__header img {
+  transform: rotate(-90deg);
+  transition: all 300ms ease;
+}
+
+.accordion__item--active .accordion__header img {
+  transform: rotate(0deg);
+}
+
+.accordion__item--active .accordion__header {
+  color: #f4f4f4;
+}
+
+.accordion__content {
+  display: none;
+  letter-spacing: 0.02em;
+  color: #ececec;
+}
+
+.accordion__item--active .accordion__content {
+  display: block;
+}
+/* === === === === Info styles end here === === === === */
+
 /* === === === === Divider section styles end here === === === === */
 .divider {
   height: 20px;
@@ -638,6 +708,14 @@ img {
 
 .why__details .h4:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.detail {
+  display: none;
+}
+
+.detail--active {
+  display: block;
 }
 /* === === === === Why section styles end here === === === === */
 
@@ -891,6 +969,10 @@ img {
     line-height: 34px;
   }
 
+  .info {
+    padding: 80px 0;
+  }
+
   .why__content {
     grid-template-columns: 300px 1fr;
   }
@@ -945,6 +1027,10 @@ img {
     position: absolute;
     top: 32px;
     right: 32px;
+  }
+
+  .info {
+    padding: 64px 0;
   }
 
   .nav__list {
@@ -1003,6 +1089,10 @@ img {
   .footer .container .left {
     order: 1;
   }
+
+  .info .container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1019,6 +1109,10 @@ img {
     line-height: 44px;
   }
 
+  .why__content {
+    margin-top: 32px;
+  }
+
   .why__details .h4 {
     font-size: 16px;
     line-height: 24px;
@@ -1031,6 +1125,10 @@ img {
   .why__points .point .h3 {
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .cta {
+    padding: 32px 0 32px 0;
   }
 
   .blog__cards {
@@ -1068,6 +1166,10 @@ img {
 
   .hero {
     padding: 272px 0 48px 0;
+  }
+
+  .info {
+    padding: 48px 0;
   }
 }
 /* === === === === Responsive styles end here === === === === */
